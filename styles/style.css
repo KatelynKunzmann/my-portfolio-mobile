@@ -157,7 +157,7 @@ main {
 /* //Resume button  
 /* ///////////////////////////////// */
 .resume-button {
-  background: #091555;
+  background: #00101f;
   font-weight: 100;
   text-align: center;
 }
@@ -170,7 +170,7 @@ main {
 }
 .resume-button rect {
   fill: none;
-  stroke: #091555;
+  stroke: #00101f;
   stroke-width: 2;
   stroke-dasharray: 422, 0;
   transition: all 0.35s linear;
@@ -230,12 +230,12 @@ main {
 }
 
 .btn-sep:before {
-  background: rgba(0, 0, 0, 0.15);
+  background: #00101f;
 }
 
 .btn-1 {
   background: #65FDDD;
-  color: #091555;
+  color: #00101f;
 }
 
 .btn-1:hover {
@@ -347,7 +347,7 @@ main {
   }
   .resume-button {
     border-color: #65FDDD;
-    color: #091555;
+    color: #00101f;
     box-shadow: 0 0 40px 40px #65FDDD inset, 0 0 0 0 #65FDDD;
     transition: all 150ms ease-in-out;
   }
