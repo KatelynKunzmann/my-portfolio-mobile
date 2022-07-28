@@ -230,12 +230,12 @@ main {
 }
 
 .btn-sep:before {
-  background: #00101f;
+  background: rgba(0, 0, 0, 0.15);
 }
 
 .btn-1 {
   background: #65FDDD;
-  color: #00101f;
+  color: #091555;
 }
 
 .btn-1:hover {
