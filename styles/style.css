@@ -5,6 +5,7 @@ body {
   color: white;
   font-weight: 300;
   letter-spacing: 0.022em;
+  padding-left: 15px;
 }
 html {
   scroll-behavior: smooth;
@@ -15,8 +16,8 @@ section {
 }
 
 /* /////////////////////////////////
-/* //Top of Page 
-/* ///////////////////////////////// */
+/* ////////// Top of Page //////////
+/* ///////////////////////////////*/
 .image-text {
   font-weight: 300;
   letter-spacing: 0.022em;
@@ -42,9 +43,19 @@ section {
   width: 200px;
 }
 
+.contact-info {
+  font-weight: 300;
+  color: white;
+  padding-bottom: 30px;
+  letter-spacing: 0.022em;
+  display: table;
+	margin-right: auto;
+	margin-left: auto;
+}
+
 /* /////////////////////////////////
-/* //Top of Page - icon links
-/* ///////////////////////////////// */
+/* /// Top of Page - icon links ////
+/* ///////////////////////////////*/
 .icon_container {
   padding-left: 65px;
   display: flex;
@@ -74,6 +85,12 @@ section {
   color: white;
 }
 /*End icon links*/
+
+
+
+/* /////////////////////////////////
+/* //////// Navigation Bar /////////
+/* ///////////////////////////////*/
 
 nav {
   position: fixed;
@@ -123,16 +140,16 @@ main {
   top: 235px;
   left: 410px;
 }
+/* End Nav Bar*/
 
-/* /////////////////////////////////
-/* //All text  
-/* ///////////////////////////////// */
+/* //////////////////////////////////
+/* ///////// All text ///////////////
+/* ////////////////////////////////*/
 .content {
   font-weight: 300;
   color: white;
   text-align: left;
   padding-bottom: 30px;
-  padding-left: 20px;
   letter-spacing: 0.022em;
 }
 
@@ -153,9 +170,28 @@ main {
   width: 100%;
 }
 
+.title {
+  color: white;
+  font-size: 175%;
+  font-weight: 300;
+  letter-spacing: 0.022em;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.subtitle {
+  color: white;
+  font-size: 125%;
+  font-weight: 100;
+  letter-spacing: 0.022em;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+/* End text formatting*/
+
 /* /////////////////////////////////
-/* //Resume button  
-/* ///////////////////////////////// */
+/* ///////// Resume button /////////
+/* ///////////////////////////////*/
 .resume-button {
   background: #00101f;
   font-weight: 100;
@@ -193,8 +229,8 @@ main {
 /* end resume button*/
 
 /* /////////////////////////////////
-/* //Projects buttons
-/* ///////////////////////////////// */
+/* //////// Project buttons ////////
+/* ///////////////////////////////*/
 .btn {
   border: none;
   border-radius: 25px;
@@ -256,21 +292,15 @@ main {
   font-size: 45px;
   width: 60px;
 }
-/* End github button*/
+/* End project buttons */
 
-/* /////////////////////////////////
-/* //////// All titles ////////////
-/* ///////////////////////////////// */
-.title {
-  color: white;
-  font-size: 175%;
-  font-weight: 300;
-  letter-spacing: 0.022em;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
 
-@media screen and (max-width: 780px) {
+/* ///////////////////////////////////////////
+/* // Responsiveness for different screens //
+/* ///////////////////////////////////////*/
+
+/* Screen sizes up to 1536px include all major tablets */
+@media screen and (max-width: 1536px) {
   .hideNav {
     display: none;
   }

@@ -167,21 +167,13 @@
   background: #e5e5e5;
   transition: width 0.4s ease;
 }
-/* .menu-title {
-  display: none;
-}
-@media (min-width: 800px) {
-  .menu-title {
-    display: block;
-    position: absolute;
-    top: 19px;
-    left: 60px;
-    font-weight: bold;
-    color: white;
-  }
-} */
 
-@media screen and (max-width: 780px) {
+/* ///////////////////////////////////////////
+/* // Responsiveness for different screens //
+/* ///////////////////////////////////////*/
+
+/* Screen sizes up to 1536px include all major tablets */
+@media screen and (max-width: 1536px) {
   .menu-container {
     display: flex;
     position: sticky;
