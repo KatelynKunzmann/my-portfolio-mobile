@@ -1,26 +1,30 @@
-body {
+:root {
   background-color: #00101f;
+  font-family: "Poppins";
+}
+
+body {
   margin: 0;
-  font-family: "Lato";
   color: white;
   font-weight: 300;
-  letter-spacing: 0.022em;
   padding-left: 15px;
+  padding-right: 15px;
+  letter-spacing: 0.03em;
 }
 html {
   scroll-behavior: smooth;
 }
 
 section {
-  padding: 10px;
+  padding: 25px;
 }
 
 /* /////////////////////////////////
 /* ////////// Top of Page //////////
 /* ///////////////////////////////*/
+
 .image-text {
   font-weight: 300;
-  letter-spacing: 0.022em;
   text-align: center;
   font-size: 130%;
   color: white;
@@ -29,7 +33,7 @@ section {
 .img-background-container {
   display: flex;
   position: relative;
-  padding-bottom: 200px;
+  /* padding-bottom: 200px; */
   max-width: 50em;
   margin: 0 auto;
 }
@@ -43,27 +47,19 @@ section {
   width: 200px;
 }
 
-.contact-info {
-  font-weight: 300;
-  color: white;
-  padding-bottom: 30px;
-  letter-spacing: 0.022em;
-  display: table;
-	margin-right: auto;
-	margin-left: auto;
-}
+
 
 /* /////////////////////////////////
 /* /// Top of Page - icon links ////
 /* ///////////////////////////////*/
 .icon_container {
-  padding-left: 65px;
   display: flex;
   flex-direction: row;
   font-size: 30px;
+  padding-top: 20px;
 }
 .icon_container > .icon {
-  padding-right: 30px;
+  padding: 0 15px;
 }
 
 .fa-github-square {
@@ -110,7 +106,7 @@ nav a {
   padding: 10px 15px;
   font-size: 1.2em;
   font-weight: 300;
-  letter-spacing: 0.022em;
+  
   color: #091555;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -125,7 +121,6 @@ main {
   margin-top: 0;
   padding: 0;
   list-style: none;
-  font-family: "Lato";
 }
 
 .page-layout {
@@ -133,24 +128,41 @@ main {
   padding-left: 250px;
 }
 
-.info {
-  color: white;
-  font-size: 12px;
-  position: absolute;
-  top: 235px;
-  left: 410px;
+#button-and-icon {
+  display: flex;
+  position: inherit;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
 }
 /* End Nav Bar*/
 
 /* //////////////////////////////////
 /* ///////// All text ///////////////
 /* ////////////////////////////////*/
+#typing-effect-text {
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.4rem;
+  color: white;
+  display: table;
+	margin-right: auto;
+	margin-left: auto;
+  margin-top: auto;
+}
+.contact-info {
+  font-weight: 300;
+  color: white;
+  padding-bottom: 30px;
+  display: table;
+	margin-right: auto;
+	margin-left: auto;
+}
+
 .content {
   font-weight: 300;
   color: white;
   text-align: left;
-  padding-bottom: 30px;
-  letter-spacing: 0.022em;
 }
 
 /* default button */
@@ -160,7 +172,6 @@ main {
   display: block;
   font-size: 14px;
   font-weight: bolder;
-  font-family: "Lato";
   line-height: 45px;
   margin: 0 0 0;
   max-width: 180px;
@@ -171,10 +182,10 @@ main {
 }
 
 .title {
+  text-decoration: underline;
   color: white;
   font-size: 175%;
-  font-weight: 300;
-  letter-spacing: 0.022em;
+  font-weight: 900;
   margin-bottom: 20px;
   margin-top: 20px;
 }
@@ -183,7 +194,6 @@ main {
   color: white;
   font-size: 125%;
   font-weight: 100;
-  letter-spacing: 0.022em;
   margin-bottom: 20px;
   margin-top: 20px;
 }
@@ -223,9 +233,6 @@ main {
   transition: all 1.4s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.button-container {
-  padding-left: 45px;
-}
 /* end resume button*/
 
 /* /////////////////////////////////
@@ -308,31 +315,10 @@ main {
     display: flex;
     padding-left: 0;
   }
-
-  .info {
-    display: flex;
-    font-size: 12px;
-    position: inherit;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .img-background-container, .about-me, .projects, .codingSkills, .education{
-  padding-left: 5px;
-}
-
-  .img-background-container {
-    padding-bottom: 50px;
-  }
   .profile-pic {
     display: flex;   
   }
-  .icon_container {
-    padding-left: 20px;
-    display: flex;
-    flex-direction: row;
-    font-size: 30px;
-  }
+
   .fa-github-square {
     color: #65FDDD;
   }
@@ -353,7 +339,7 @@ main {
   }
 
   .button-container {
-    padding-left: 30px;
+    display: flex;
   }
   .button {
     appearance: none;
@@ -368,7 +354,6 @@ main {
     text-decoration: none;
     text-align: center;
     text-transform: uppercase;
-    font-family: "Lato";
     font-weight: 700;
   }
   .button:hover,
