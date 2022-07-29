@@ -1,5 +1,19 @@
 :root {
-  background-color: #00101f;
+  --dark-purple: #170028;
+  --peach: #e96444; 
+  --rose-pink: #a4124c;
+  --purple: #3424ac;
+
+  --dark-green: #014e33;
+  --forest-green: #3a8107;
+  --mint-green: #33b885;
+  --brown: #2e1c0b;
+
+  --navy: #00101f;
+  --pale-blue: #6eaeeb;
+  --aqua: #65FDDD;
+
+  background-color: var(--navy);
   font-family: "Poppins";
 }
 
@@ -33,7 +47,6 @@ section {
 .img-background-container {
   display: flex;
   position: relative;
-  /* padding-bottom: 200px; */
   max-width: 50em;
   margin: 0 auto;
 }
@@ -63,19 +76,19 @@ section {
 }
 
 .fa-github-square {
-  color: #65FDDD;
+  color: var(--aqua);
 }
 .fa-github-square:hover {
   color: white;
 }
 .fa-envelope {
-  color: #65FDDD;
+  color: var(--aqua);
 }
 .fa-envelope:hover {
   color: white;
 }
 .fa-linkedin {
-  color: #65FDDD;
+  color: var(--aqua);
 }
 .fa-linkedin:hover {
   color: white;
@@ -94,7 +107,7 @@ nav {
   left: 0;
   width: 250px;
   height: 100%;
-  background-color: #65FDDD;
+  background-color: var(--aqua);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -167,7 +180,7 @@ main {
 
 /* default button */
 .button {
-  color: #65FDDD;
+  color: var(--aqua);
   cursor: pointer;
   display: block;
   font-size: 14px;
@@ -203,7 +216,7 @@ main {
 /* ///////// Resume button /////////
 /* ///////////////////////////////*/
 .resume-button {
-  background: #00101f;
+  background: var(--navy);
   font-weight: 100;
   text-align: center;
 }
@@ -216,7 +229,7 @@ main {
 }
 .resume-button rect {
   fill: none;
-  stroke: #00101f;
+  stroke: var(--navy);
   stroke-width: 2;
   stroke-dasharray: 422, 0;
   transition: all 0.35s linear;
@@ -277,7 +290,7 @@ main {
 }
 
 .btn-1 {
-  background: #65FDDD;
+  background: var(--aqua);
   color: #091555;
 }
 
@@ -286,7 +299,7 @@ main {
 }
 
 .btn-1:active {
-  background: #65FDDD;
+  background: var(--aqua);
   top: 2px;
 }
 
@@ -305,7 +318,12 @@ main {
 /* /////////////////////////////////
 /* ////////// Donut Chart //////////
 /* ///////////////////////////////*/
-
+#donut {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 
 /* End Donut chart */
 
@@ -328,19 +346,19 @@ main {
   }
 
   .fa-github-square {
-    color: #65FDDD;
+    color: var(--aqua);
   }
   .fa-github-square:hover {
     color: white;
   }
   .fa-envelope {
-    color: #65FDDD;
+    color: var(--aqua);
   }
   .fa-envelope:hover {
     color: white;
   }
   .fa-linkedin {
-    color: #65FDDD;
+    color: var(--aqua);
   }
   .fa-linkedin:hover {
     color: white;
@@ -369,12 +387,12 @@ main {
     outline: 0;
   }
   .resume-button {
-    border-color: #65FDDD;
-    color: #00101f;
-    box-shadow: 0 0 40px 40px #65FDDD inset, 0 0 0 0 #65FDDD;
+    border-color: var(--aqua);
+    color: var(--navy);
+    box-shadow: 0 0 40px 40px var(--aqua) inset, 0 0 0 0 var(--aqua);
     transition: all 150ms ease-in-out;
   }
   .resume-button:hover {
-    box-shadow: 0 0 10px 0 #65FDDD inset, 0 0 10px 4px #65FDDD;
+    box-shadow: 0 0 10px 0 var(--aqua) inset, 0 0 10px 4px var(--aqua);
   }
 }

@@ -89,7 +89,7 @@
   </div>
 
   <!--About me section-->
-  <section class="about-me">
+  <section>
     <h1 class="title">About me</h1>
     <div>
       <p class="content">
@@ -106,8 +106,8 @@
   </section>
 
   <!-- Projects Section -->
-  <span id="projects">&nbsp;</span>
-  <section class="projects">
+  <span>&nbsp;</span>
+  <section>
     <h1 class="title">Projects</h1>
     <div class="content">
       <h2 class="subtitle">NFT Matching Game</h2>
@@ -178,7 +178,7 @@
 
 
   <!--Coding Skills Section-->
-  <span id=" codingSkills">&nbsp;</span>
+  <!-- <span id=" codingSkills">&nbsp;</span>
   <section class="codingSkills">
     <h1 class="title">Coding Skills</h1>
     <div>
@@ -191,13 +191,67 @@
         <li>Assembly/x86</li>
         <li>Solidity</li>
       </ul>
-    </div>
+    </div> -->
+  <!-- </section> -->
+  <section>
+    <script src="https://cdn.anychart.com/releases/8.10.0/js/anychart-core.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.10.0/js/anychart-pie.min.js"></script>
+    <div id="donut" style="height: 300px; width: 300px; padding: 125px 25px;"></div>
+    <script>
+      anychart.onDocumentReady(function () {
+        var data = [
+          { x: 'Java', value: 34 },
+          { x: 'Python', value: 21 },
+          { x: 'HTML&CSS', value: 15 },
+          { x: 'JavaScript', value: 11 },
+          { x: 'Solidity', value: 3 },
+          { x: 'Assembly/x86', value: 3 },
+          { x: 'C', value: 13 }
+        ];
+        var dataSet = anychart.data.set(data);
 
+        var chart = anychart.pie(data);
+
+        chart.background().fill("#00101f");
+        // Chart radius of 55% creates hole for donut chart
+        chart.innerRadius('55%');
+        var title = chart.title();
+        title.enabled(true);
+        var fontColor = title.fontColor('White');
+        title.text('Coding Skills');
+        title.fontSize('175%');
+
+
+        // create a color palette
+        var palette = anychart.palettes.distinctColors();
+
+        // set the colors according to the brands
+        palette.items([
+          { color: 'var(--aqua)' },
+          { color: 'var(--peach)' },
+          { color: 'var(--pale-blue)' },
+          { color: 'var(--rose-pink)' },
+          { color: 'var(--purple)' },
+          { color: 'black' },
+          { color: 'var(--brown)' }
+        ]);
+
+        // apply the donut chart color palette
+        chart.palette(palette);
+        chart.tooltip().format('{%PercentValue}%');
+
+        // set container id for the chart
+        chart.container('donut');
+        chart.draw();
+      });
+
+
+    </script>
   </section>
 
   <!-- Education Section -->
-  <span id="education">&nbsp;</span>
-  <section id="education" class="education">
+  <span>&nbsp;</span>
+  <section>
     <h1 class="title">Education</h1>
 
     <h3 class="subtitle">University of Pittsburgh:</h3>
