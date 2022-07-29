@@ -21,17 +21,13 @@ body {
   margin: 0;
   color: white;
   font-weight: 300;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 15px;
   letter-spacing: 0.03em;
 }
 html {
   scroll-behavior: smooth;
 }
 
-section {
-  padding: 25px;
-}
 
 /* /////////////////////////////////
 /* ////////// Top of Page //////////
@@ -195,7 +191,6 @@ main {
 }
 
 .title {
-  text-decoration: underline;
   color: white;
   font-size: 175%;
   font-weight: 900;
