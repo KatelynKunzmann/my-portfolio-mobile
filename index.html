@@ -87,183 +87,380 @@
     </div>
   </div>
 
-  <!--About me section-->
+  <!---------------------------------------------------------------->
+  <!------------------------- About Me ----------------------------->
+  <!---------------------------------------------------------------->
   <section>
-    <h1 class="title">About me</h1>
-    <div>
-      <p class="content">
-        I am currently a Computer Science student at the University of
-        Pittsburgh. I have a passion for learning while returning the favor
-        to help others. I was, and still am, an inquisitive person.
-        Nowadays, my yearning for learning is geared towards programming. I
-        am constantly researching and becoming enveloped in the computer
-        science world. My interests include: anything Cryptography or Blockchain related.
-        My CS unrelated hobbies are downhill skateboarding, snowboarding, gems and minerals,
-        video games, crypto trading and cuddling my cat.
-      </p>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <span>&nbsp;</span>
-  <section id="projects">
-    <h1 class="title">🖥️ Projects</h1>
+    <h1 class="title">👩‍🎓 About Me</h1>
     <div class="content">
-      <h2 class="subtitle">NFT Matching Game</h2>
-      A matching card game that awards NFTs to your browser wallet with every match
+      I am currently a Computer Science student at the University of Pittsburgh. When I'm not typing on keyboards, I'm
+      building them.
     </div>
-    <div class="button-container">
-      <a href="https://github.com/KatelynKunzmann/NFT-matching-game">
-        <button style="color: #091555" class="fa fa-github-square btn btn-1 btn-sep">
-          <span style="font-size: larger; font-family: Poppins">GitHub</span>
-        </button>
-      </a>
-    </div>
-    <h2 class=" subtitle">Yield Aggregator</h2>
-    An application that finds the better yield percentage between Compound and Aave and then accrues that yield
-    to your
-    current browser wallet balance
-    </div>
-    <div class="button-container">
-      <a href="https://github.com/KatelynKunzmann/yield-aggregator">
-        <button style="color: #091555" class="fa fa-github-square btn btn-1 btn-sep">
-          <span style="font-size: larger; font-family: Poppins">GitHub</span>
-        </button>
-      </a>
-    </div>
-    <h2 class=" subtitle">Dioptase NFT</h2>
-    Created an NFT and hosted it on the Solana blockchain using Linode
-    </div>
-    <div class="button-container">
-      <a href="https://solscan.io/token/HgWt1oMYfnwYD4ttMBXnyzbZrmNiZheMjWHYzRC5diCL">
-        <button style="color: #091555" class="fa fa-github-square btn btn-1 btn-sep">
-          <span style="font-size: larger; font-family: Poppins">GitHub</span>
-        </button>
-      </a>
-    </div>
-    <h2 class=" subtitle">Kill Bill: Vol 1 Hypertext</h2>
-    A hypertextual narrative adventure through the famous duel between
-    Lucy Liu and Uma Thurman
-    </div>
-    <div class="button-container">
-      <a href="https://github.com/KatelynKunzmann/hypertext">
-        <button style="color: #091555" class="fa fa-github-square btn btn-1 btn-sep">
-          <span style="font-size: larger; font-family: Poppins">GitHub</span>
-        </button>
-      </a>
-    </div>
-    <h2 class=" subtitle">Memory Game</h2>
-    A matching card game
-    </div>
-    <div class="button-container">
-      <a href="https://github.com/KatelynKunzmann/Memory-game">
-        <button style="color: #091555" class="fa fa-github-square btn btn-1 btn-sep">
-          <span style="font-size: larger; font-family: Poppins">GitHub</span>
-        </button>
-      </a>
-    </div>
-    <h2 class=" subtitle">Simon Says</h2>
-    Simon Says game implemented with assembly code
-    </div>
-    <div class="button-container">
-      <a href="https://github.com/KatelynKunzmann/Simon-Says">
-        <button style="color: #091555" class="fa fa-github-square btn btn-1 btn-sep">
-          <span style="font-size: larger; font-family: Poppins">GitHub</span>
-        </button>
-      </a>
-    </div>
-    </div>
-  </section>
-
-
-  <!--Coding Skills Section-->
-  <section id="coding-skills">
-    <script src="https://cdn.anychart.com/releases/8.10.0/js/anychart-core.min.js"></script>
-    <script src="https://cdn.anychart.com/releases/8.10.0/js/anychart-pie.min.js"></script>
-    <div id="donut" style="height: 300px; width: 300px"></div>
-    <script>
-      anychart.onDocumentReady(function () {
-        var data = [
-          { x: 'Java', value: 34 },
-          { x: 'Python', value: 21 },
-          { x: 'HTML&CSS', value: 15 },
-          { x: 'JavaScript', value: 11 },
-          { x: 'Solidity', value: 3 },
-          { x: 'Assembly/x86', value: 3 },
-          { x: 'C', value: 13 }
-        ];
-        var dataSet = anychart.data.set(data);
-
-        var chart = anychart.pie(data);
-
-        chart.background().fill("#00101f");
-        // Chart radius of 55% creates hole for donut chart
-        chart.innerRadius('55%');
-        var title = chart.title();
-        title.enabled(true);
-        var fontColor = title.fontColor('White');
-        title.text('⌨️ Coding Skills');
-        title.fontSize('175%');
-
-
-        // create a color palette
-        var palette = anychart.palettes.distinctColors();
-
-        // set the colors according to the brands
-        palette.items([
-          { color: 'var(--aqua)' },
-          { color: 'var(--peach)' },
-          { color: 'var(--pale-blue)' },
-          { color: 'var(--rose-pink)' },
-          { color: 'var(--purple)' },
-          { color: 'black' },
-          { color: 'var(--brown)' }
-        ]);
-
-        // apply the donut chart color palette
-        chart.palette(palette);
-        chart.tooltip().format('{%PercentValue}%');
-
-        // set container id for the chart
-        chart.container('donut');
-        chart.draw();
-      });
-
-
-    </script>
-  </section>
-
-  <!-- Education Section -->
-  <span>&nbsp;</span>
-  <section id="education">
-    <h1 class="title">📚 Education</h1>
-
-    <h3 class="subtitle">University of Pittsburgh:</h3>
-    <div>
-      <ul class="content">
-        <li>Software Engineering</li>
-        <li>Programming for Web Applications</li>
-        <li>Intro to Operating Systems</li>
-        <li>Composing Digital Media</li>
-        <li>Software Quality Assurance</li>
-        <li>Algorithms</li>
-        <li>Computer Organization and Assembly Language</li>
-        <li>Intro to Systems Software</li>
-        <li>Data Structures</li>
+    <div style="margin-top: 25px; text-align: center"><img src="assets/img/Keeb.png"></div>
+    <div class="content">
+      <ul>
+        Other interests I have include:
+        <li>anything cryptography or blockchain related</li>
+        <li>downhill skateboarding</li>
+        <li>snowboarding</li>
+        <li>gems and minerals</li>
+        <li>crypto trading</li>
+        <li>video games</li>
+        <li>cuddling my cat</li>
       </ul>
     </div>
-    <h3 class="subtitle">Community College of Allegheny County</h3>
-    <div>
-      <ul class="content">
-        <li>Object Oriented Programming</li>
-        <li>Python Programming</li>
+
+
+    <!---------------------------------------------------------------->
+    <!------------------------- Projects ----------------------------->
+    <!---------------------------------------------------------------->
+    <span>&nbsp;</span>
+    <section id="projects">
+      <h1 class="title">🖥️ Projects</h1>
+      <h2 class="project-subtitle">Meow Match</h2>
+      <div style="margin-top: 25px; text-align: center">
+        <img src="assets/img/cat-cafe.jpg" alt="blact cat with coffee and text cat cafe">
+      </div>
+
+      <ul>
+        <li>Meow Match is a Cat Cafe website/business implemented
+          with <br>VueJS + Python Django + SQLite</li>
+        <li>Frontend website currently in development</li>
       </ul>
-    </div>
-  </section>
+      <div style="text-align: center">
+        <a href="https://github.com/KatelynKunzmann/MeowMatch">
+          <button style="color: #091555" class="fa fa-github-square btn btn-1 btn-sep">
+            <span style="font-size: larger; font-family: Poppins">GitHub</span>
+          </button>
+        </a>
+      </div>
+
+
+      <h2 class="project-subtitle">Interest</h2>
+      <div style="margin-top: 25px; text-align: center">
+        <img src="assets/img/interest.png" alt="graduation cap with dollar sign">
+      </div>
+      <ul>
+        <li>A semester-long group project built with 2 other teammates</li>
+        <li>A web application that calculates your student loan payments</li>
+        <li>Provides an amortization table of payments, a loan summary,
+          and a loan safety ratio (will the student be able to pay back this loan
+          with their expected salary after graduation)
+        </li>
+      </ul>
+      <div style="text-align: center">
+        <a href="https://github.com/KatelynKunzmann/interest">
+          <button style="color: #091555" class="fa fa-github-square btn btn-1 btn-sep">
+            <span style="font-size: larger; font-family: Poppins">GitHub</span>
+          </button>
+        </a>
+      </div>
+
+
+      <h2 class="project-subtitle">Ride-Hailing App</h2>
+      <div style="margin-top: 25px; text-align: center">
+        <img src="assets/img/hail.jpg" alt="two people hailing a car with their phone">
+      </div>
+      <ul>
+        <li>An Android app that allows users to book a ride with a driver</li>
+        <li>Built with React Native and Pusher</li>
+        <li>---- currently in development ----</li>
+      </ul>
+      <div style="text-align: center">
+        <a href="https://github.com/KatelynKunzmann/">
+          <button style="color: #091555" class="fa fa-github-square btn btn-1 btn-sep">
+            <span style="font-size: larger; font-family: Poppins">GitHub</span>
+          </button>
+        </a>
+      </div>
+
+
+      <h2 class="project-subtitle">Sorting Algorithm Visualizer</h2>
+      <div style="margin-top: 25px; text-align: center">
+        <img src="assets/img/algo.gif" alt="gif of bars being sorted using bubble sort">
+      </div>
+      <ul>
+        <li>Sorting algorithms visualized with Python</li>
+      </ul>
+      <div style="text-align: center">
+        <a href="https://github.com/KatelynKunzmann/Sorting_Algorithm_Visualizer">
+          <button style="color: #091555" class="fa fa-github-square btn btn-1 btn-sep">
+            <span style="font-size: larger; font-family: Poppins">GitHub</span>
+          </button>
+        </a>
+      </div>
+
+
+      <h2 class="project-subtitle">Typing Test for Kids</h2>
+      <div style="margin-top: 25px; text-align: center">
+        <img src="assets/img/typing--test.png" alt="gif of bars being sorted using bubble sort">
+      </div>
+      <ul>
+        <li>Inspired by my niece who is learning how to type
+          and I will soon start teaching her how to code</li>
+        <li>Implemented with JavaScript</li>
+      </ul>
+      <div style="text-align: center">
+        <a href="https://github.com/KatelynKunzmann/typing-test">
+          <button style="color: #091555" class="fa fa-github-square btn btn-1 btn-sep">
+            <span style="font-size: larger; font-family: Poppins">GitHub</span>
+          </button>
+        </a>
+      </div>
+
+
+      <h2 class="project-subtitle">Memory Game</h2>
+      <div style="margin-top: 25px; text-align: center">
+        <img src="assets/img/mem-game.png" alt="Matching card memory game made with javascript">
+      </div>
+      <ul>
+        <li>Matching card game implemented with JavaScript</li>
+      </ul>
+      <div style="text-align: center">
+        <a href="https://github.com/KatelynKunzmann/Memory-game">
+          <button style="color: #091555" class="fa fa-github-square btn btn-1 btn-sep">
+            <span style="font-size: larger; font-family: Poppins">GitHub</span>
+          </button>
+        </a>
+      </div>
+
+
+      <h2 class="project-subtitle">Simon Says in Assembly</h2>
+      <div style="margin-top: 25px; text-align: center">
+        <img src="assets/img/SimonSays.png" alt="Simon says childhood game implemented with assembly code">
+      </div>
+      <ul>
+        <li>Simon Says game implemented in Mips with assembly code</li>
+      </ul>
+      <div style="text-align: center">
+        <a href="https://github.com/KatelynKunzmann/Simon-Says">
+          <button style="color: #091555" class="fa fa-github-square btn btn-1 btn-sep">
+            <span style="font-size: larger; font-family: Poppins">GitHub</span>
+          </button>
+        </a>
+      </div>
+
+
+      <h2 class="project-subtitle">Kill Bill: Hypertext</h2>
+      <div style="margin-top: 25px; text-align: center">
+        <img src="assets/img/KillBill.png" alt="Kill Bill hypertext game">
+      </div>
+      <ul>
+        <li>A hypertextual narrative adventure into the famous fight scene from Kill Bill Vol 1:
+          Showdown at the House of Blue Leaves</li>
+        <li>My first ever experience with HTML, CSS, and JavaScript</li>
+      </ul>
+      <div style="text-align: center">
+        <a href="https://github.com/KatelynKunzmann/hypertext">
+          <button style="color: #091555" class="fa fa-github-square btn btn-1 btn-sep">
+            <span style="font-size: larger; font-family: Poppins">GitHub</span>
+          </button>
+        </a>
+      </div>
+
+
+      <!---------------------------------------------------------------->
+      <!-------------------- Blockchain Projects ----------------------->
+      <!---------------------------------------------------------------->
+      <h1 class="title" style="margin-top: 150px">⛓️ Blockchain Projects</h1>
+
+      <h2 class="project-subtitle">Peer-to-Peer Blockchain</h2>
+      <div style="margin-top: 25px; text-align: center">
+        <img src="assets/img/Go--p2p.png" alt="Blockchain with 2 peers">
+      </div>
+      <ul>
+        <li>Implemented in GO</li>
+        <li>Consensus = longest chain amongst all peers wins</li>
+        <li>---- Currently in development ----</li>
+      </ul>
+      <div style="text-align: center">
+        <a href="https://github.com/KatelynKunzmann/">
+          <button style="color: #091555" class="fa fa-github-square btn btn-1 btn-sep">
+            <span style="font-size: larger; font-family: Poppins">GitHub</span>
+          </button>
+        </a>
+      </div>
+
+
+      <h2 class="project-subtitle">Yield Aggregator</h2>
+      <div style="margin-top: 25px; text-align: center">
+        <img src="assets/img/YieldAgg.png" alt="Yield aggregator web application">
+      </div>
+      <ul>
+        <li>A dApp that chooses the greater yield between Compound & Aave and
+          accrues that yield onto the balance</li>
+        <li>User can withdraw into their browser wallet at any time</li>
+        <li>Implemented with Solidity, React, and Web3.js</li>
+      </ul>
+      <div style="text-align: center">
+        <a href="https://github.com/KatelynKunzmann/yield-aggregator">
+          <button style="color: #091555" class="fa fa-github-square btn btn-1 btn-sep">
+            <span style="font-size: larger; font-family: Poppins">GitHub</span>
+          </button>
+        </a>
+      </div>
+
+
+      <h2 class="project-subtitle">NFT Card Matching</h2>
+      <div style="margin-top: 25px; text-align: center">
+        <img src="assets/img/NFT-game.png" alt="NFT card matching game">
+      </div>
+      <ul>
+        <li>Card matching game where winners receive NFTs to their browser wallet</li>
+        <li>Implemented with Solidity and JavaScript</li>
+      </ul>
+      <div style="text-align: center">
+        <a href="https://github.com/KatelynKunzmann/NFT-matching-game">
+          <button style="color: #091555" class="fa fa-github-square btn btn-1 btn-sep">
+            <span style="font-size: larger; font-family: Poppins">GitHub</span>
+          </button>
+        </a>
+      </div>
+
+
+      <h2 class="project-subtitle">Dioptase NFT</h2>
+      <div style="margin-top: 25px; text-align: center">
+        <img src="assets/img/NFT_Dioptase.png" alt="NFT named Dioptase hosted on Solana">
+      </div>
+      <ul>
+        <li>My own personal NFT named after my favorite mineral, Dioptase</li>
+        <li>Hosted on Solana with Linode</li>
+      </ul>
+      <div style="text-align: center">
+        <a href="https://solscan.io/token/HgWt1oMYfnwYD4ttMBXnyzbZrmNiZheMjWHYzRC5diCL">
+          <button style="color: #091555" class="fa fa-github-square btn btn-1 btn-sep">
+            <span style="font-size: larger; font-family: Poppins">GitHub</span>
+          </button>
+        </a>
+      </div>
+
+
+    </section>
+
+
+    <!---------------------------------------------------------------->
+    <!------------------------ Coding Skills ------------------------->
+    <!---------------------------------------------------------------->
+    <section id="coding-skills">
+      <script src="https://cdn.anychart.com/releases/8.10.0/js/anychart-core.min.js"></script>
+      <script src="https://cdn.anychart.com/releases/8.10.0/js/anychart-pie.min.js"></script>
+      <div id="donut" style="height: 300px; width: 300px"></div>
+      <script>
+        anychart.onDocumentReady(function () {
+          var data = [
+            { x: 'Java', value: 25 },
+            { x: 'Python', value: 15 },
+            { x: 'HTML&CSS', value: 15 },
+            { x: 'JavaScript', value: 15 },
+            { x: 'C', value: 15 },
+            { x: 'Solidity', value: 5 },
+            { x: 'Assembly/x86', value: 5 },
+            { x: 'Go', value: 5 }
+          ];
+          var dataSet = anychart.data.set(data);
+
+          var chart = anychart.pie(data);
+
+          chart.background().fill("#00101f");
+          // Chart radius of 55% creates hole for donut chart
+          chart.innerRadius('55%');
+          var title = chart.title();
+          title.enabled(true);
+          var fontColor = title.fontColor('White');
+          title.text('⌨️ Coding Skills');
+          title.fontSize('175%');
+
+
+          // create a color palette
+          var palette = anychart.palettes.distinctColors();
+
+          // set the colors according to the brands
+          palette.items([
+            { color: 'var(--aqua)' },
+            { color: 'var(--peach)' },
+            { color: 'var(--pale-blue)' },
+            { color: 'var(--rose-pink)' },
+            { color: 'var(--purple)' },
+            { color: 'black' },
+            { color: 'var(--brown)' },
+            { color: 'limegreen' }
+          ]);
+
+          // apply the donut chart color palette
+          chart.palette(palette);
+          chart.tooltip().format('{%PercentValue}%');
+
+          // set container id for the chart
+          chart.container('donut');
+          chart.draw();
+        });
+
+
+      </script>
+
+      <h3>🧰 Development Tools</h3>
+      <div>
+        <ul>
+          <li>Git</li>
+          <li>Linux</li>
+          <li>jUnit testing</li>
+          <li>React</li>
+          <li>VueJS, ViteJS, threeJS</li>
+          <li>SQLite</li>
+          <li>Postman</li>
+          <li>Selenium</li>
+          <li>VisualVM</li>
+          <li>Ganache</li>
+        </ul>
+      </div>
+
+    </section>
+
+    <!---------------------------------------------------------------->
+    <!------------------------- Education ---------------------------->
+    <!---------------------------------------------------------------->
+    <span>&nbsp;</span>
+    <section id="education">
+      <h1 class="title">📚 Education</h1>
+
+      <h3 class="subtitle"> Carnegie Mellon University</h3>
+      <div>
+        <ul>
+          <li>Cryptocurrencies, Blockchains, and Applications</li>
+        </ul>
+      </div>
+
+      <h3 class="subtitle">University of Pittsburgh</h3>
+      <div>
+        <ul class="content">
+          <li>Applied Cryptography and Network Security</li>
+          <li>Data Structures and Algorithms 2</li>
+          <li>Software Engineering</li>
+          <li>Programming for Web Applications</li>
+          <li>Operating Systems</li>
+          <li>Composing Digital Media</li>
+          <li>Software Quality Assurance</li>
+          <li>Computer Organization and Assembly Language</li>
+          <li>Intro to Systems Software</li>
+          <li>Data Structures</li>
+        </ul>
+      </div>
+      <h3 class="subtitle">Community College of Allegheny County</h3>
+      <div>
+        <ul class="content">
+          <li>Object Oriented Programming - Java</li>
+          <li>Python Programming</li>
+        </ul>
+      </div>
+    </section>
 </body>
 
 </html>
 
+
+<!----------------------------------------------------------------------------------------------->
+<!------------------------- Script for active typing text in header ----------------------------->
+<!----------------------------------------------------------------------------------------------->
 <script>
 
   var i = 0;
