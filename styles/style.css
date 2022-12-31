@@ -1,6 +1,6 @@
 :root {
   --dark-purple: #170028;
-  --peach: #e96444; 
+  --peach: #e96444;
   --rose-pink: #a4124c;
   --purple: #3424ac;
 
@@ -11,7 +11,7 @@
 
   --navy: #00101f;
   --pale-blue: #6eaeeb;
-  --aqua: #65FDDD;
+  --aqua: #65fddd;
 
   background-color: var(--navy);
   font-family: "Poppins";
@@ -31,7 +31,6 @@ section {
   padding-bottom: 50px;
   padding-top: 50px;
 }
-
 
 /* /////////////////////////////////
 /* ////////// Top of Page //////////
@@ -59,8 +58,6 @@ section {
 .image-profile {
   width: 200px;
 }
-
-
 
 /* /////////////////////////////////
 /* /// Top of Page - icon links ////
@@ -95,8 +92,6 @@ section {
 }
 /*End icon links*/
 
-
-
 /* /////////////////////////////////
 /* //////// Navigation Bar /////////
 /* ///////////////////////////////*/
@@ -119,7 +114,7 @@ nav a {
   padding: 10px 15px;
   font-size: 1.2em;
   font-weight: 300;
-  
+
   color: #091555;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -159,8 +154,8 @@ main {
   font-size: 1.4rem;
   color: white;
   display: table;
-	margin-right: auto;
-	margin-left: auto;
+  margin-right: auto;
+  margin-left: auto;
   margin-top: auto;
 }
 .contact-info {
@@ -168,8 +163,8 @@ main {
   color: white;
   padding-bottom: 30px;
   display: table;
-	margin-right: auto;
-	margin-left: auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .content {
@@ -211,14 +206,50 @@ main {
   /* text-align: center; */
 }
 
+.work-title-div {
+  color: white;
+  font-size: 125%;
+  font-weight: 100;
+  text-align: left;
+  width: 50%;
+  margin-left: 0;
+  margin-right: auto;
+  float: left;
+}
+.work-date-div {
+  color: white;
+  font-size: 125%;
+  font-weight: 100;
+  text-align: right;
+  width: 50%;
+  margin-left: auto;
+  margin-right: 0;
+  float: right;
+}
+.company-name {
+  font-size: 95%;
+  color: white;
+  margin-left: 0;
+  margin-right: auto;
+  float: left;
+  text-indent: 50px;
+}
+
+.work-description {
+  font-size: 85%;
+  color: white;
+  margin-left: 0;
+  margin-right: auto;
+  float: left;
+  text-indent: 50px;
+}
 .project-subtitle {
-    color: white;
+  color: white;
   font-size: 125%;
   font-weight: 100;
   margin-bottom: 20px;
   margin-top: 20px;
   text-align: center;
-
 }
 /* End text formatting*/
 
@@ -324,7 +355,6 @@ main {
 }
 /* End project buttons */
 
-
 /* /////////////////////////////////
 /* ////////// Donut Chart //////////
 /* ///////////////////////////////*/
@@ -336,7 +366,6 @@ main {
 }
 
 /* End Donut chart */
-
 
 /* ///////////////////////////////////////////
 /* // Responsiveness for different screens //
@@ -352,7 +381,7 @@ main {
     padding-left: 0;
   }
   .profile-pic {
-    display: flex;   
+    display: flex;
   }
 
   .fa-github-square {
