@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="styles/menu.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Katelyn Kunzmann</title>
+  <link rel="icon" href="assets/img/white-kat.png" type="image/x-icon">
 </head>
 
 <body onload="typeWriter()">
@@ -65,7 +66,7 @@
   <p id="typing-effect-text"></p>
   <div id="button-and-icon">
     <div class="button-container">
-      <a href="https://drive.google.com/file/d/1Rbw_7Av2lHO9RsNpPH5mSPlFWYKkWBH_/view?usp=share_link" target="_blank"
+      <a href="https://drive.google.com/file/d/12P3OSdCOlT6NTIXDXgUAK91AADK18X7E/view?usp=drive_link" target="_blank"
         rel="noopener noreferrer" class="button resume-button" style="font-size: 17px">
         <svg>
           <rect x=" 0" y="0" fill="none" width="140%" height="150%" />
@@ -134,30 +135,34 @@
   <section id="experience">
     <h1 class="title">💻 Experience</h1>
     <div>
-      <div class="work-title-div">Software Engineer Associate</div>
+      <div class="work-title-div">Software Engineer Summer Associate</div>
       <div class="work-date-div">06/2023 - 08/2023</div>
-      <div class="company-name">Tackle.io</div>
+      <a href="https://tackle.io" target="_blank" rel="noopener noreferrer" style="color: #00CED1;">Tackle.io</a>
       <div class="company-name" style="float:right;">Remote</div>
       <div class="work-description">
         <ul>
-          <li>...Starts June 5th 2023...</li>
+          <li>Developed and deployed a reverse proxy server
+            application that securely manages customer
+            credentials and facilitates interactions with cloud
+            APIs on behalf of customers.</li>
+          <li>Learned and applied software development best
+            practices, including CICD, agile methodologies,
+            and automated testing.</li>
         </ul>
       </div>
       <div class="work-title-div">Malware Analyst Intern</div>
-      <div class="work-date-div">01/2023 - 04/2023</div>
-      <div class="company-name">National Cyber-Forensics and Training Alliance (NCFTA)</div>
+      <div class="work-date-div">01/2023 - 03/2023</div>
+      <div><a href="https://www.ncfta.net/" target="_blank" rel="noopener noreferrer" style="color: #00CED1;">National
+          Cyber-Forensics and Training Alliance (NCFTA)</a></div>
       <div class="company-name" style="float:right;">Pittsburgh, PA</div>
       <div class="work-description">
         <ul>
-          <li>Conducted static and dynamic analysis on
-            malware and ransomware variants.</li>
-          <li>Wrote technical reports on latest malware
+          <li>Developed a new malware analysis tool that is in
+            use at the company today.</li>
+          <li>Reverse engineered and conducted static and
+            dynamic analysis on malware and ransomware
             variants.</li>
-          <li>Reverse engineered and used disassembly on
-            malware variants to gain detailed insight on
-            behavior.</li>
-          <li>Developed new malware analysis tools that are
-            being used at the company today.</li>
+          <li>Wrote technical reports on malware variants.</li>
         </ul>
       </div>
     </div>
@@ -170,6 +175,42 @@
   <span>&nbsp;</span>
   <section id="projects">
     <h1 class="title">🖥️ Projects</h1>
+    <h2 class="project-subtitle">Sigil - Reverse Proxy Server</h2>
+    <div style="margin-top: 25px; text-align: center">
+      <img src="assets/img/sigil.png" alt="Cloud with lock inside">
+    </div>
+    <ul>
+      <li>A secure vault that manages customer credentials and operates as a
+        reverse proxy server, facilitating interactions with cloud APIs on behalf of
+        customers.</li>
+      <li>Developing currently at internship at Tackle.io</li>
+      <li>Implemented with Python + AWS-Boto3</li>
+    </ul>
+    <div style="text-align: center">
+      <a href="https://github.com/tackle-io">
+        <button style="color: #091555" class="fa fa-github-square btn btn-1 btn-sep">
+          <span style="font-size: larger; font-family: Poppins">GitHub</span>
+        </button>
+      </a>
+    </div>
+
+    <h2 class="project-subtitle">Mal-Monthly</h2>
+    <div style="margin-top: 25px; text-align: center">
+      <img src="assets/img/mal-monthly.png" alt="Flash drive with bug/malware">
+    </div>
+    <ul>
+      <li>A web application that displays the most shared malware for the past 30 days.</li>
+      <li>Developed during internship at the NCFTA.</li>
+      <li>Implemented with JavaScript + NodeJS + ExpressJS + HTML/CSS</li>
+    </ul>
+    <div style="text-align: center">
+      <a href="https://github.com/KatelynKunzmann/Mal-Monthly">
+        <button style="color: #091555" class="fa fa-github-square btn btn-1 btn-sep">
+          <span style="font-size: larger; font-family: Poppins">GitHub</span>
+        </button>
+      </a>
+    </div>
+
     <h2 class="project-subtitle">Group-Based File Sharing Application</h2>
     <div style="margin-top: 25px; text-align: center">
       <img src="assets/img/group-fas.png" alt="Multiple servers that share files">
@@ -178,7 +219,8 @@
       <li>Group-based file sharing application that is secure
         against a number of different types of security threats.</li>
       <li>A semester-long group project to apply cryptographic and
-        security concepts to a multiple server file-sharing application built using Java.</li>
+        security concepts to a multiple server file-sharing application.</li>
+      <li>Implemented with Java + Bouncy Castle</li>
     </ul>
     <div style="text-align: center">
       <a href="https://github.com/KatelynKunzmann/File-Application-System">
@@ -194,12 +236,13 @@
       <img src="assets/img/interest.png" alt="graduation cap with dollar sign">
     </div>
     <ul>
-      <li>A semester-long group project built with 2 other teammates using Java and React.</li>
+      <li>A semester-long group project built with 2 other teammates.</li>
       <li>A web application that calculates your student loan payments</li>
       <li>Provides an amortization table of payments, a loan summary,
         and a loan safety ratio (will the student be able to pay back this loan
         with their expected salary after graduation)
       </li>
+      <li>Implemented with React + Java</li>
     </ul>
     <div style="text-align: center">
       <a href="https://github.com/KatelynKunzmann/interest">
@@ -216,9 +259,9 @@
     </div>
 
     <ul>
-      <li>Meow Match is a Cat Cafe website/business implemented
-        with <br>VueJS + Python Django + SQLite</li>
+      <li>Meow Match is a Cat Cafe website/"business"</li>
       <li>Frontend website currently in development</li>
+      <li>Implemented with VueJS + Python Django + SQLite</li>
     </ul>
     <div style="text-align: center">
       <a href="https://github.com/KatelynKunzmann/MeowMatch">
@@ -252,7 +295,7 @@
     <ul>
       <li>Inspired by my niece who is learning how to type
         and I will soon start teaching her how to code</li>
-      <li>Implemented with JavaScript</li>
+      <li>Implemented with JavaScript + HTML/CSS</li>
     </ul>
     <div style="text-align: center">
       <a href="https://github.com/KatelynKunzmann/typing-test">
@@ -318,7 +361,7 @@
     <!---------------------------------------------------------------->
     <h1 class="title" style="margin-top: 150px">⛓️ Blockchain Projects</h1>
 
-    <h2 class="project-subtitle">Peer-to-Peer Blockchain</h2>
+    <!-- <h2 class="project-subtitle">Peer-to-Peer Blockchain</h2>
     <div style="margin-top: 25px; text-align: center">
       <img src="assets/img/Go--p2p.png" alt="Blockchain with 2 peers">
     </div>
@@ -333,7 +376,7 @@
           <span style="font-size: larger; font-family: Poppins">GitHub</span>
         </button>
       </a>
-    </div>
+    </div> -->
 
 
     <h2 class="project-subtitle">Yield Aggregator</h2>
@@ -402,8 +445,8 @@
     <script>
       anychart.onDocumentReady(function () {
         var data = [
-          { x: 'Java', value: 25 },
-          { x: 'Python', value: 15 },
+          { x: 'Java', value: 20 },
+          { x: 'Python', value: 20 },
           { x: 'HTML&CSS', value: 15 },
           { x: 'JavaScript', value: 15 },
           { x: 'C', value: 15 },
@@ -455,18 +498,17 @@
     <h3>🧰 Development Tools</h3>
     <div>
       <ul>
-        <li>Git</li>
-        <li>Trello</li>
+        <li>Git, Jira, CICD</li>
         <li>Linux</li>
-        <li>jUnit testing</li>
+        <li>AWS, Boto3</li>
+        <li>FastAPI</li>
+        <li>NodeJS, ExpressJS</li>
         <li>React</li>
         <li>ViteJS, threeJS</li>
-        <li>SQLite</li>
-        <li>Postman</li>
-        <li>Selenium</li>
-        <li>VisualVM</li>
-        <li>Ganache</li>
+        <li>SQL</li>
         <li>Python Django</li>
+        <li>jUnit testing</li>
+        <li>Postman, Selenium, VisualVM</li>
       </ul>
     </div>
 
